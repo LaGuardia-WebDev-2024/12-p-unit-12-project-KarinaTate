@@ -1,15 +1,15 @@
 <!-- Unit 12 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ x ] $() Select by Element, ID AND Class 
+[ x ] Use Three Different jQuery Methods 
+[ x ] Add Five CSS Declarations
+[ x ] Include Three Images
 
 Select ONE Additional 
 [ no ] Feature 1 - Use .addClass() method
 [ no ] Feature 2 - Use a variable in javaScript 
 [ no ] Feature 3 - Use .mouseover() method
-[ no ] Feature 4 - Use .show() method
+[ x ] Feature 4 - Use .show() method
 [ no ] Feature 5 - Use .append() method
 -->
 
@@ -19,42 +19,70 @@ Select ONE Additional
   <head>
     <meta charset="utf-8" />
     <title>Unit 12 Project</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
+    <button id="pr1-button">Project #1</button>
+    <button id="pr2-button">Project #2</button>
+    <button id="pr3-button">Project #3</button>
+    <h1><em><u>My Top 3 Web Dev Projects from <span>This Year</span></u></em></h1>
     <ol>
+    
       <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+         <a href="https://laguardia-webdev-2024.github.io/1-p-unit-project-KarinaTate/"> <h3 class= "project1" id="pr1">Project #1: An Objective Evaluation of
+A Few Different Types of Hats</h3></a>
+       
+        <p>I appreciate how much effort I put into such a silly prompt.</p>
+     <img src= "data:image/jpeg;base64,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"  id="hat" style="display:none">
+   
+      
       </li>
 
       <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <a href="https://laguardia-webdev-2024.github.io/7-p-unit-7-project-KarinaTate/"> <h3 class="project2" id="pr2">Project #2:Fish</h3></a>
+       
+        
+        <p>I just really like this one.
+    
+        </p>
+         <img src="https://guidesly.com/static/394845ea6476ea6f42f999b343c601ec/5f471/Guidesly_Goldfish_737f6b7de8.jpg" id= "fishy" style="display:none">
       </li>
 
       <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        
+      
+         <a href="https://laguardia-webdev-2024.github.io/10-p-unit-10-project-KarinaTate/"> <h3 class="project3" id="pr3">Project #3: The Patterns One </h3></a>
+       
+        <p class="p3">I know it doesnt look like much but I remember being kind of confused about how I was meant to get the loops to work, so when I finally managed to figure it out I felt really proud of myself.  </p>
+      <img src="data:image/jpeg;base64,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" id="orange" style="display:none">
       </li>
     </ol>
 
+  
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-      $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+      $("p").css('color',"#606c38");
+      
+      
+      $("#pr1-button").click(function () {
+        $("#pr1").css("color", "#606c38");
+   $("#hat").show(2000)
+       $(".project1").css('background-color',"rgb(255,244,255)");         
+      });      
+     
+      $("#pr2-button").click(function () {
+        $("#pr2").css("color", "#219ebc");
+         $("#fishy").show(2000)
+        $(".project2").css('background-color',"rgb(255,244,255)");
+       
       });
-
-      $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
-      });
-
-      $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
+      
+      $("#pr3-button").click(function () {
+        $("#pr3").css("color", "#bc6c25");
+         $("#orange").show(2000)
+        $(".project3").css('background-color',"rgb(255,244,255)");
+$(".p3").text("I know it doesnt look like much but I remember being kind of confused about how I was meant to get the loops to work, so when I finally managed to figure it out I felt really proud of myself. ")
       });
     </script>
   </body>
